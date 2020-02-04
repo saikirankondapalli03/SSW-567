@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2020-02-04 17:13:52</p>
+                <p class='attribute'><strong>Duration: </strong>38 ms</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 17, Pass: 2, Fail: 14, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.TestTriangles</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testEquilateralTriangleA</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'Equilateral'
+- InvalidInput
++ Equilateral
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 39, in testEquilateralTriangleA
+    self.assertEqual(classifyTriangle(2,2,2),'Equilateral')
+AssertionError: 'InvalidInput' != 'Equilateral'
+- InvalidInput
++ Equilateral
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testEquilateralTriangleB</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'Equilateral'
+- InvalidInput
++ Equilateral
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 42, in testEquilateralTriangleB
+    self.assertEqual(classifyTriangle(5,5,5),'Equilateral')
+AssertionError: 'InvalidInput' != 'Equilateral'
+- InvalidInput
++ Equilateral
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testInvalidInputA</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">testInvalidInputB</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">testInvalidInputC</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">TypeError: '>' not supported between instances of 'str' and 'int'</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 27, in testInvalidInputC
+    self.assertEqual(classifyTriangle("200",0, 0),'InvalidInput')
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\Triangle.py", line 31, in classifyTriangle
+    if a > 200 or b > 200 or c > 200:
+TypeError: '>' not supported between instances of 'str' and 'int'
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testIsocelesTriangleA</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'Isoceles'
+- InvalidInput
++ Isoceles
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 60, in testIsocelesTriangleA
+    self.assertEqual(classifyTriangle(3, 3, 2),'Isoceles')
+AssertionError: 'InvalidInput' != 'Isoceles'
+- InvalidInput
++ Isoceles
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testIsocelesTriangleB</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'Isoceles'
+- InvalidInput
++ Isoceles
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 63, in testIsocelesTriangleB
+    self.assertEqual(classifyTriangle(4, 6, 6),'Isoceles')
+AssertionError: 'InvalidInput' != 'Isoceles'
+- InvalidInput
++ Isoceles
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testIsocelesTriangleC</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'Isoceles'
+- InvalidInput
++ Isoceles
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 66, in testIsocelesTriangleC
+    self.assertEqual(classifyTriangle(6, 4, 6),'Isoceles')
+AssertionError: 'InvalidInput' != 'Isoceles'
+- InvalidInput
++ Isoceles
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testIsocelesTriangleD</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'Isoceles'
+- InvalidInput
++ Isoceles
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 69, in testIsocelesTriangleD
+    self.assertEqual(classifyTriangle(6, 6, 4),'Isoceles')
+AssertionError: 'InvalidInput' != 'Isoceles'
+- InvalidInput
++ Isoceles
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testNotATriangleA</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'NotATriangle'
+- InvalidInput
++ NotATriangle
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 30, in testNotATriangleA
+    self.assertEqual(classifyTriangle(5, 2, 1),'NotATriangle')
+AssertionError: 'InvalidInput' != 'NotATriangle'
+- InvalidInput
++ NotATriangle
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testNotATriangleB</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'NotATriangle'
+- InvalidInput
++ NotATriangle
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 33, in testNotATriangleB
+    self.assertEqual(classifyTriangle(2, 5, 1),'NotATriangle')
+AssertionError: 'InvalidInput' != 'NotATriangle'
+- InvalidInput
++ NotATriangle
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testNotATriangleC</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'NotATriangle'
+- InvalidInput
++ NotATriangle
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 36, in testNotATriangleC
+    self.assertEqual(classifyTriangle(1,2, 5),'NotATriangle')
+AssertionError: 'InvalidInput' != 'NotATriangle'
+- InvalidInput
++ NotATriangle
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testRightTriangleA</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 45, in testRightTriangleA
+    self.assertEqual(classifyTriangle(15,17,8),'Right')
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testRightTriangleB</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 48, in testRightTriangleB
+    self.assertEqual(classifyTriangle(28,45,53),'Right')
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testRightTriangleC</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 51, in testRightTriangleC
+    self.assertEqual(classifyTriangle(12,5, 13), 'Right')
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testRightTriangleD</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 54, in testRightTriangleD
+    self.assertEqual(classifyTriangle(8, 6, 10), 'Right')
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">testScaleneTriangleA</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: 'InvalidInput' != 'Scalene'
+- InvalidInput
++ Scalene
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\Sai Kiran\Desktop\3rd sem\567\HW-02-1\TestTriangle.py", line 57, in testScaleneTriangleA
+    self.assertEqual(classifyTriangle(10, 15, 12),'Scalene')
+AssertionError: 'InvalidInput' != 'Scalene'
+- InvalidInput
++ Scalene
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 17, Pass: 2, Fail: 14, Error: 1 -- Duration: 38 ms
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
