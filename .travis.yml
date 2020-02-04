@@ -5,4 +5,5 @@ install:
   - pip install html-testRunner
 
 script:
-  - python -m unittest HW02-a/TestTriangle.py
+  - cd HW02-a
+  - python -m unittest TestTriangle.py
